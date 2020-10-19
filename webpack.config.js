@@ -34,6 +34,12 @@ module.exports = {
           loader: "babel-loader"
         }
       },
+      //Regla para el uso de los source maps
+      {
+        test: /\.(js|jsx)$/,
+        enforce: 'pre',
+        use: ['source-map-loader'],
+      },
       {
         // Regla para trabajar con los archivos html
         test: /\.html$/,

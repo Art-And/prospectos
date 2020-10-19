@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Test = () => {
+const Test = () => (
   <h1>Esta es una prueba</h1>
-};
+);
 
 export default Test;
