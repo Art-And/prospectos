@@ -1,6 +1,7 @@
 import React from 'react';
-import '../assets/styles/App.scss';
 import Test from '../components/Test';
+
+import '../assets/styles/App.scss';
 
 const App = () => (
   <div className='app'>
