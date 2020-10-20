@@ -1,12 +1,12 @@
 import React from 'react';
-import Test from '../components/Test';
+import SlideBar from '../components/SlideBar';
 
 import '../assets/styles/App.scss';
 
-const Home = () => (
+const App = () => (
   <div className='app'>
-    <Test />
+    <SlideBar />
   </div>
 );
 
-export default Home;
+export default App;
