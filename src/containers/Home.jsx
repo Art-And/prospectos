@@ -1,5 +1,5 @@
 import React from 'react';
-import SlideBar from '../components/SlideBar';
+import SlideBar from '../components/SideBar/SlideBar';
 
 import '../assets/styles/App.scss';
 
