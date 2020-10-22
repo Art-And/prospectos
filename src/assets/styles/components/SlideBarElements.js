@@ -1,10 +1,11 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const SideBarContainer = styled.aside`
 position:fixed;
 background-color: rgb(95, 75, 139);
 height: 100%;
-width: 18.750em;
+width: 16em;
 top: 0;
 left: 0;
 transition: 0.3s ease-in-out;
@@ -17,7 +18,7 @@ transition: 0.3s ease-in-out;
 }`;
 
 //Styles de Icons
-export const ContainerIcons = styled.div`
+export const ContainerIcons = styled(NavLink)`
 margin-top:0.938em;
 display: flex;
 justify-content: center;
@@ -41,15 +42,20 @@ export const MenuContainer = styled.div`
 margin-top: 4em;
 `;
 
-export const MenuButton = styled.button`
+export const MenuButton = styled(NavLink)`
 background-color: rgba(0, 0, 0, 0.2);
-border-radius:0.5em;
+border-radius:.5em;
 color: white;
 margin-bottom: 5px;
 border:none;
 width: 100%;
 display: flex;
 align-items: center;
+text-decoration: none;
+
+:hover{
+  color: orange;
+}
 
 @media screen and (max-width:1000px, 1500px) {
   display: flex;
@@ -59,12 +65,12 @@ align-items: center;
 `;
 
 export const IconMenu = styled.img`
-margin-left: 1.5em;
-padding-right: 1.5em;
+margin-left: 0.5em;
+padding-right: 1em;
 height: 2.7em;
 
 @media screen and (max-width:1500px) {
-  margin-left:0.8em;
+  margin-left:0.6em;
 }
 
 @media screen and (max-width:1000px) {
@@ -73,10 +79,7 @@ height: 2.7em;
 `;
 
 export const TextMenu = styled.span`
-::hover{
-  color: aqua;
-}
-font-size: 1em;
+font-size: .8em;
 
 @media screen and (max-width:1000px ) {
   display: none;

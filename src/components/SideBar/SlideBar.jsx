@@ -16,23 +16,27 @@ import adsIcon from '../../assets/static/reportfb-g.svg';
 import repIcon from '../../assets/static/reportes.svg';
 import userIcon from '../../assets/static/usuarios.svg';
 
-const SlideBar = ({ title }) => (
-  <SideBarContainer>
-    <ContainerIcons>
-      <Icon src={iconMin} />
-      <NameIcon src={iconFull} />
-    </ContainerIcons>
+const SlideBar = () => {
+  const titleNames = ['Desarrollos', 'Prospectos', 'Dashboard', 'Anuncios', 'Reportes', 'Usuarios'];
 
-    <MenuContainer>
-      <SideBarMenu title='Desarrollos' icon={homeIcon} />
-      <SideBarMenu title='Prospectos' icon={prospIcon} />
-      <SideBarMenu title='Dashboards' icon={dashIcon} />
-      <SideBarMenu title='Anuncios' icon={adsIcon} />
-      <SideBarMenu title='Reportes' icon={repIcon} />
-      <SideBarMenu title='Usuarios' icon={userIcon} />
-    </MenuContainer>
+  return (
+    <SideBarContainer>
+      <ContainerIcons to='/'>
+        <Icon src={iconMin} />
+        <NameIcon src={iconFull} />
+      </ContainerIcons>
 
-  </SideBarContainer>
-);
+      <MenuContainer>
+        <SideBarMenu title={titleNames[0]} icon={homeIcon} route={titleNames[0]} />
+        <SideBarMenu title={titleNames[1]} icon={prospIcon} route='/' />
+        <SideBarMenu title={titleNames[2]} icon={dashIcon} route={titleNames[2]} />
+        <SideBarMenu title={titleNames[3]} icon={adsIcon} route={titleNames[3]} />
+        <SideBarMenu title={titleNames[4]} icon={repIcon} route={titleNames[4]} />
+        <SideBarMenu title={titleNames[5]} icon={userIcon} route={titleNames[5]} />
+      </MenuContainer>
+
+    </SideBarContainer>
+  );
+};
 
 export default SlideBar;

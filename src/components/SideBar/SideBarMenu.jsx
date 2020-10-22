@@ -1,14 +1,11 @@
 import React from 'react';
-import {
-  IconMenu,
-  MenuButton,
-  TextMenu } from '../../assets/styles/components/SlideBarElements';
+import { IconMenu, MenuButton, TextMenu } from '../../assets/styles/components/SlideBarElements';
 
-const SideBarMenu = ({ title, icon }) => (
+const SideBarMenu = ({ title, icon, route }) => (
   <>
-    <MenuButton>
+    <MenuButton to={route}>
       <IconMenu src={icon} />
-      <TextMenu>{title}</TextMenu>
+      <TextMenu title={title}>{title}</TextMenu>
     </MenuButton>
   </>
 );
