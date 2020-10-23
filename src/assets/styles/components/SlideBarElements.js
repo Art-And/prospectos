@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
 
 export const SideBarContainer = styled.aside`
 position:fixed;
@@ -39,7 +41,7 @@ height: 1.875em;
 
 //Styles de  Menu
 export const MenuContainer = styled.div`
-margin-top: 4em;
+margin-top: 4em
 `;
 
 export const MenuButton = styled(NavLink)`
@@ -83,5 +85,36 @@ font-size: .8em;
 
 @media screen and (max-width:1000px ) {
   display: none;
+}
+`;
+
+//styles de Dropdown del Menu
+
+export const DropD = styled(Dropdown)`
+
+`;
+
+export const DropdownT = styled(DropdownToggle)`
+width:100%;
+padding:0;
+height: 45px;
+margin-bottom:5px;
+border: none;
+background: none;
+
+`;
+
+export const DropdownM = styled(DropdownMenu)`
+background:none;
+border: none;
+width:9.375em;
+padding-top:1px;
+`;
+
+export const DropdownI = styled.div`
+background: none;
+
+@media screen and (max-width:1000px) {
+  width: 3.8em;
 }
 `;

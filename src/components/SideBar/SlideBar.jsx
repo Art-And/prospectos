@@ -1,5 +1,6 @@
 import React from 'react';
 import SideBarMenu from './SideBarMenu';
+import SideDropdown from './SideDropdown';
 import {
   ContainerIcons,
   Icon,
@@ -17,7 +18,16 @@ import repIcon from '../../assets/static/reportes.svg';
 import userIcon from '../../assets/static/usuarios.svg';
 
 const SlideBar = () => {
-  const titleNames = ['Desarrollos', 'Prospectos', 'Dashboard', 'Anuncios', 'Reportes', 'Usuarios'];
+  const titleNames = [
+    'Desarrollos',
+    'Prospectos',
+    'Dashboard',
+    'Anuncios',
+    'Reportes',
+    'Usuarios',
+    'Reportes de Desempeño',
+    'Registro de Usuarios',
+  ];
 
   return (
     <SideBarContainer>
@@ -31,8 +41,13 @@ const SlideBar = () => {
         <SideBarMenu title={titleNames[1]} icon={prospIcon} route='/' />
         <SideBarMenu title={titleNames[2]} icon={dashIcon} route={titleNames[2]} />
         <SideBarMenu title={titleNames[3]} icon={adsIcon} route={titleNames[3]} />
-        <SideBarMenu title={titleNames[4]} icon={repIcon} route={titleNames[4]} />
-        <SideBarMenu title={titleNames[5]} icon={userIcon} route={titleNames[5]} />
+
+        <SideDropdown title={titleNames[6]} icon={repIcon} route='#'>
+          <SideBarMenu title={titleNames[4]} icon={repIcon} route='#' />
+        </SideDropdown>
+        <SideDropdown title={titleNames[7]} icon={userIcon} route='#'>
+          <SideBarMenu title={titleNames[5]} icon={userIcon} route='#' />
+        </SideDropdown>
       </MenuContainer>
 
     </SideBarContainer>
