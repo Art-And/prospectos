@@ -1,14 +1,12 @@
 import React from 'react';
 import SlideBar from '../components/SideBar/SlideBar';
-import Header from '../components/Header/Header';
 
 import '../assets/styles/App.scss';
 
-const App = () => (
+const Desarrollos = () => (
   <div className='app'>
-    <Header />
     <SlideBar />
   </div>
 );
 
-export default App;
+export default Desarrollos;

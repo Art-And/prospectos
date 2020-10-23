@@ -55,8 +55,15 @@ display: flex;
 align-items: center;
 text-decoration: none;
 
+:focus{
+    background:#F2F2F2;
+    border-radius:0em;
+    color:rgb(95, 75, 139);
+}
+
 :hover{
   color: orange;
+  text-decoration: none;
 }
 
 @media screen and (max-width:1000px, 1500px) {
