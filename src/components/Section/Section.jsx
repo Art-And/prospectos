@@ -2,7 +2,7 @@ import React from 'react';
 import { ContainerSection,
   FistButtons,
   SecondButtons,
-  Tabla,
+  TablaContainer,
   OriginButton,
   Menus,
   MenusItem,
@@ -10,6 +10,7 @@ import { ContainerSection,
   IconLog,
   ButtonTwo,
   ButtonThree,
+  ButtonExel,
   InputSearch,
   TextOne,
   TextTwo } from '../../assets/styles/components/SectionElements';
@@ -17,7 +18,7 @@ import Toggle from './Toggle';
 
 import calendarIcon from '../../assets/static/calendario.svg';
 
-const Section = () => (
+const Section = ({ children }) => (
   <ContainerSection>
 
     <FistButtons>
@@ -40,16 +41,18 @@ const Section = () => (
 
     <SecondButtons>
       <TextOne>Prospectos </TextOne>
-      <TextTwo> en total</TextTwo>
+      <TextTwo>en total</TextTwo>
       <Toggle />
       <InputSearch />
-      <ButtonTwo>Ver Landing Page</ButtonTwo>
-      <ButtonTwo>Ver Landing Page</ButtonTwo>
-      <ButtonThree>Ver Landing Page</ButtonThree>
-      <ButtonThree>Ver Landing Page</ButtonThree>
+      <ButtonTwo>Ordenar por fecha</ButtonTwo>
+      <ButtonTwo>Ordenar por Score</ButtonTwo>
+      <ButtonThree>Filtro</ButtonThree>
+      <ButtonExel>Excel</ButtonExel>
     </SecondButtons>
 
-    <Tabla />
+    <TablaContainer>
+      {children}
+    </TablaContainer>
 
   </ContainerSection>
 

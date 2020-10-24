@@ -19,7 +19,7 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgba(50, 224 ,196 ,0.7);
+  background: orangered;
   border-radius: 25px;
   border: 10px solid orangered;
 }
@@ -29,3 +29,9 @@ body::-webkit-scrollbar:hover, ::-webkit-scrollbar-thumb:hover{
 body::-webkit-scrollbar-corner{
   visibility: hidden;
 };
+
+.custom-control-label, .custom-control, .custom-switch {
+  @media screen and (max-width:1300px) {
+    display:none;
+  }
+}
