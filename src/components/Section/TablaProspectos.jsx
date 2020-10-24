@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label } from 'reactstrap';
+=======
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
+>>>>>>> 9b3be89c80f2ece4462650a076a1df95ac9c89f4
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../assets/styles/components/Prospectos.scss';
