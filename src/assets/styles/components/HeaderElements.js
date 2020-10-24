@@ -140,6 +140,8 @@ export const Menus = styled(Menu)`
 
 export const MenusItem = styled(MenuItem)`
 font-size: .8em;
+display:flex;
+justify-content:flex-end;
 `;
 
 export const MenusButton = styled(NavButton)`
