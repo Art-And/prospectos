@@ -34,6 +34,7 @@ export const OriginButton = styled.button`
   justify-content: center;
   align-items: center;
   background:rgb(95, 75, 139);
+  font-size: .8em;
 
   :hover{
     border: visible;
@@ -103,32 +104,109 @@ height: 1.5em;
 
 //SecondPart
 export const SecondButtons = styled.div`
-
+margin-top:35px;
+display: flex;
 `;
 
 export const ButtonTwo = styled(OriginButton)`
-
+width: 250px;
+border-radius: 25px;
 `;
 
 export const ButtonThree = styled(OriginButton)`
+border-radius: 25px;
+background:white;
+border-color:rgb(95, 75, 139);
+border-width:1px;
+color:rgb(95, 75, 139);
 
+:hover{
+  background:rgb(95, 75, 139);
+  border-color:white;
+  color:white;
+  }
+
+  :focus{
+    background:rgb(95, 75, 139);
+    border-color:white;
+    color:white;
+}
+`;
+
+export const ButtonExel = styled(ButtonThree)`
+border-width:2px;
+border-color:orangered;
+color:orangered;
+
+:hover{
+    background:orangered;
+    border-color:white;
+    color:white;
+  }
+
+  :focus{
+    background:orangered;
+    border-color:white;
+    color:white;
+}
 `;
 
 export const InputSearch = styled.input.attrs({
   type: 'text',
-  placeholder: 'Seach',
+  placeholder: '    Buscar',
 })`
+margin-left:30px;
+margin-right:100px;
+border-radius:25px;
+border-width:1px;
+border-color:grey;
+color:grey;
+outline:none;
 
+@media screen and (max-width:1250px) {
+  margin-right:60px;
+}
+@media screen and (max-width:1130px) {
+  margin-right:30px;
+}
+@media screen and (max-width:750px) {
+  display:none;
+}
 `;
 
 export const TextOne = styled.p`
+margin-left:15px;
 
+@media screen and (max-width:1130px) {
+  display:none;
+}
 `;
 export const TextTwo = styled.p`
+margin-left:20px;
+margin-top:3px;
+font-size:.8em;
+margin-right:150px;
+color:grey;
 
+@media screen and (max-width:1250px) {
+  display: none;
+}
 `;
 
 //Tabla
-export const Tabla = styled.div`
+export const TablaContainer = styled.div`
 
+margin-top:1em;
+margin-left:1em;
+margin-right:1em;
+height: 44em;
+
+
+@media screen and (max-width:1500px) {
+  margin-left:1em;
+}
+
+@media screen and (max-width:1000px) {
+
+}
 `;
